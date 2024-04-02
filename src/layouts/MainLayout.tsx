@@ -1,10 +1,16 @@
+import { Layout } from "antd";
+import { Content, Header } from "antd/es/layout/layout";
 import { Outlet } from "react-router-dom";
+import NavBar from "../components/Navbar";
 
 const MainLayout = () => {
   return (
-    <div className="h-full">
-      <Outlet />
-    </div>
+    <Layout className="w-[700px] m-auto bg-transparent">
+      <NavBar />
+      <Content>
+        <Outlet />
+      </Content>
+    </Layout>
   );
 };
 
