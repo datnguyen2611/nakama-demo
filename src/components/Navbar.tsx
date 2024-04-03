@@ -17,7 +17,7 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex-1 grid grid-cols-2 gap-x-6 gap-y-5 pb-2">
+    <div className="flex-1 grid grid-cols-2 gap-x-2 gap-y-5 pb-2">
       {routes.map((route) => (
         <NavbarItem
           key={route.path}
