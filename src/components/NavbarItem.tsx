@@ -1,5 +1,5 @@
-import { Link, useLocation } from "react-router-dom";
 import { Icon } from "iconsax-react";
+import { Link, useLocation } from "react-router-dom";
 import { cn } from "../lib/utils";
 
 interface SidebarItemProps {
@@ -8,11 +8,7 @@ interface SidebarItemProps {
   icon: Icon;
 }
 
-const NavbarItem: React.FC<SidebarItemProps> = ({
-  label,
-  href,
-  icon: Icon,
-}) => {
+const NavbarItem: React.FC<SidebarItemProps> = ({ href, icon: Icon }) => {
   const location = useLocation();
   const isActive =
     href === location.pathname || location.pathname.startsWith(`${href}/`);

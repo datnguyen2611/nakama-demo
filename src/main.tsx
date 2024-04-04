@@ -1,14 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
 import { StyleProvider } from "@ant-design/cssinjs";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Toaster } from "sonner";
 import App from "./App.tsx";
 import "./index.css";
-import { Toaster } from "sonner";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout.tsx";
 import Home from "./pages/Home.tsx";
-import { Pages } from "./types/index.ts";
 import Notification from "./pages/Notification.tsx";
+import { Pages } from "./types/index.ts";
 
 const router = createBrowserRouter([
   {

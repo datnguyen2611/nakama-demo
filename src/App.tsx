@@ -1,7 +1,7 @@
 import { ConfigProvider } from "antd";
-import "./App.css";
-import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import locale from "antd/locale/vi_VN";
+import { Outlet } from "react-router-dom";
+import "./App.css";
 function App() {
   return (
     <ConfigProvider

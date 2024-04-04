@@ -1,6 +1,4 @@
 import { Card, Flex, Typography } from "antd";
-import Meta from "antd/es/card/Meta";
-import Title from "antd/es/typography/Title";
 
 const Notification = () => {
   const notifiItems = [
