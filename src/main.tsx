@@ -19,7 +19,6 @@ const router = createBrowserRouter([
         children: [
           {
             path: Pages.home,
-            index: true,
             element: <Home />,
           },
           {
